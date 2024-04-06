@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DHK Store</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<div id="cart-icon" onclick="toggleCart()">
+    <img src="image/icon.png">
+    <div id="totalQuantity"></div>
+</div>
+
+<!-- Product List -->
+<h2>Products</h2>
+<div id="product-list">
+   
+    <div id="product1">
+        <p><a href="#">Honda SH MOde 69</a></p>
+        <img src="image/123.jpg"  width="200" height="200">
+        <p>55,000,000₫</p>
+        <button onclick="addToCart('Honda SH MOde 69', 55000000, 'image/123.jpg');">Thêm vào giỏ hàng</button>
+    </div>
+</div>
+<div id="product-list">  
+    <div id="product2">
+        <p><a href="#">Honda Wave</a></p>
+        <img src="image/124.jpg"  width="200" height="200">
+        <p>650,000,000₫</p>
+        <button onclick="addToCart('Honda Wave', 650000000, 'image/124.jpg');">Thêm vào giỏ hàng</button>
+    </div>
+</div>
+
+
+<!-- Shopping Cart -->
+<div id="shopping-cart">
+    <h2>Giỏ hàng của bạn</h2>
+    <ul id="cart-items">
+    </ul>
+    <p>Total: <span id="total-price">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+    <button id="close-cart">Đóng</button>
+
+</div>
+<div class="overlay"></div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
