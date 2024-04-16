@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DHK Store</title>
+    <link rel="shortcut icon" type="image/jpg" href="image/z5351183440573_1a661e5964612850d2f57ef7139f87c3.jpg" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <span><a href="main.html"><img src="image/z5351183440573_1a661e5964612850d2f57ef7139f87c3.jpg" width="20px"
+                    height="20px">DHK Store</a></span>
+        <nav>
+            <a class="active" href="cart.html">Trang chủ</a>
+            <a href="#news">Tin tức</a>
+            <a href="lh.html">Liên hệ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div id="cart-icon" onclick="toggleCart()">
+            <img src="image/icon.png">
+            <div id="totalQuantity"></div>
+        </div>
+    </div>
+
+    <div class="banner-qc"><img src="image/banner qc.jpg"></div>
+    <div class="sptt">
+        <div class="main-sptt">Tất cả sản phẩm</div>
+    </div>
+    <!-- Product List -->
+    <div id="product-list">
+        <div id="product">
+            <a href="sp1.html"><img src="image/123.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">Honda SH MOde 69</a></p>
+            <p id="price">55,000,000₫</p>
+            <button onclick="addToCart('Honda SH MOde 69', 55000000, 'image/123.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/124.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WAVE ALPHA CỔ ĐIỂN 2024</a></p>
+            <p id="price">19,590,000₫</p>
+            <button onclick="addToCart('HONDA WAVE ALPHA CỔ ĐIỂN 2024', 19590000, 'image/124.jpg');">THÊM VÀO
+                GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/125.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WAVE RSX 2024</a></p>
+            <p id="price">23,490,000₫</p>
+            <button onclick="addToCart('HONDA WAVE RSX 2024', 23490000, 'image/125.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/126.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WINNER X 2024</a></p>
+            <p id="price">41,660,000₫</p>
+            <button onclick="addToCart('HONDA WINNER X 2024', 41660000, 'image/126.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/126.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WINNER X 2024</a></p>
+            <p id="price">41,660,000₫</p>
+            <button onclick="addToCart('HONDA WINNER X 2024', 41660000, 'image/126.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/126.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WINNER X 2024</a></p>
+            <p id="price">41,660,000₫</p>
+            <button onclick="addToCart('HONDA WINNER X 2024', 41660000, 'image/126.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/126.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WINNER X 2024</a></p>
+            <p id="price">41,660,000₫</p>
+            <button onclick="addToCart('HONDA WINNER X 2024', 41660000, 'image/126.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+        <div id="product">
+            <a href="sp1.html"> <img src="image/126.jpg" width="200" height="200"></a>
+            <p id="p-name"><a href="sp1.html">HONDA WINNER X 2024</a></p>
+            <p id="price">41,660,000₫</p>
+            <button onclick="addToCart('HONDA WINNER X 2024', 41660000, 'image/126.jpg');">THÊM VÀO GIỎ</button>
+        </div>
+
+
+    </div>
+
+
+    <!-- Shopping Cart -->
+    <div id="shopping-cart">
+        <h2>Giỏ hàng của bạn</h2>
+        <ul id="cart-items">
+        </ul>
+        <p>Total: <span id="total-price">0</span></p>
+        <button id="check-out" onclick="checkout()">Checkout</button>
+        <button id="close-cart">Đóng</button>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#">12 Tran hung dao</a></li>
+                        <li><a href="#">34 Truong cong dinh</a></li>
+                        <li><a href="#">55 Le hong phong</a></li>
+                        <li><a href="#">09 Tran duy hung</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

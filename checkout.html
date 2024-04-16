@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout</title>
+    <link rel="shortcut icon" type="image/jpg" href="image/z5351183440573_1a661e5964612850d2f57ef7139f87c3.jpg"/>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div class="bigc">
+        <div id="cart-info"> </div>
+        <div class="ttmh">
+            <p><a href="main.html">Tiếp tục mua hàng</a></p>
+        </div>
+
+        <form id="customer-info">
+            <h2>Thông tin khách hàng</h2>
+            <label for="name"></label><br>
+            <input type="text" id="name" name="name" placeholder="Họ và tên" required><br>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <label for="phone"></label><br>
+            <input type="number" id="phone" name="phone" placeholder="Điện thoại" required><br>
+            <label for="address"></label><br>
+            <input type="text" id="address" name="address" placeholder="Địa chỉ" required><br>
+            <div class="cd">
+                <div class="city0"><label for="city">Tỉnh:</label>
+                    <select id="city" onchange="populateDistricts()">
+                        <option value="">-- Tỉnh --</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="hochiminh">Hồ Chí Minh</option>
+                        <option value="brvt">Bà Rịa Vũng Tàu</option>
+                    </select>
+                </div>
+
+                <div class="dis0"> <label for="district">Quận/Huyện:</label>
+                    <select id="district"></select>
+                </div>
+            </div> <br>
+            <button class="thanhtoan">Thanh Toán</button>
+        </form>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

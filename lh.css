@@ -1,0 +1,162 @@
+.contact {
+	padding-top: 120px;
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	font-size: 14px;
+}
+
+.container {
+	margin-top: -100px;
+	background-color: rgba(206, 166, 166, 0.724);
+	border-radius: 20px;
+	width: 800px;
+}
+
+.container .icon-close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: skyblue;
+	font-size: 2em;
+	color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	cursor: pointer;
+	z-index: 1;
+	right: 375px;
+	padding: 10px;
+}
+
+.contact-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+
+.one h3 {
+	font-size: 25px;
+	margin-bottom: 2px;
+}
+
+.one {
+	margin: 80px auto;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.one p {
+	padding: 10px;
+	color: black;
+	margin-left: 10px;
+}
+
+.one ion-icon {
+	font-size: 20px;
+	color: rgb(4, 4, 4);
+	margin-right: 10px;
+}
+
+.form {
+	padding: 30px 50px;
+	max-width: 500px;
+	height: 500px;
+	margin: 50px auto;
+}
+
+.form-control {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.form-control label {
+	color: #fff;
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+.form-control input {
+	background: whitesmoke;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 14px;
+	color: black;
+	border-radius: 10px;
+	border: 1px solid black;
+	font-family: 'Roboto', sans-serif;
+}
+
+.form-control input#username {
+	background-color: transparent;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: var(--success-color);
+}
+
+.form-control.error input {
+	border-color: var(--error-color);
+}
+
+.form-control small {
+	color: var(--error-color);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+textarea {
+	border: 1px solid black;
+	border-radius: 10px;
+	resize: none;
+	width: 318px;
+	height: 85px;
+}
+
+.form button {
+	cursor: pointer;
+	background-color: crimson;
+	border: 2px solid crimson;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.word {
+	padding: 0 10px;
+	margin: 0 10px;
+	font-size: large;
+}
+
+.lh-tt {
+	text-align: center;
+	justify-content: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+}
